@@ -51,4 +51,65 @@
         ],
         "description": "Vue reactive snippet"
     },
+    "vue props": {
+        "prefix": "vprops",
+        "body": [
+            "const props = defineProps({",
+            "\t${1:prop}: {",
+            "\t\ttype: ${2:String},",
+            "\t\tdefault: ${3:defaultValue}",
+            "\t}",
+            "});"
+        ],
+        "description": "Vue props snippet"
+    },
+    "vue prop": {
+        "prefix": "vprop",
+        "body": [
+            "${1:prop}: {",
+            "\ttype: ${2:String},",
+            "\tdefault: ${3:defaultValue}",
+            "},",
+        ],
+        "description": "Vue props snippet"
+    },
+    "vue emits": {
+        "prefix": "vemits",
+        "body": [
+            "defineEmits({",
+            "\t${1:event}: {",
+            "\t\ttype: ${2:String},",
+            "\t\tdefault: ${3:defaultValue}",
+            "\t}",
+            "});"
+        ],
+        "description": "Vue emits snippet"
+    },
+    "vue async func":{
+        "prefix": "vasync",
+        "body": [
+            "const ${1:func} = async (${2}) => {",
+            "\t${3}",
+            "};"
+        ],
+        "description": "Vue async function snippet"
+    },
+    "vue function":{
+        "prefix": "vfunc",
+        "body": [
+            "const ${1:func} = (${2}) => {",
+            "\t${3}",
+            "};"
+        ],
+        "description": "Vue function snippet"
+    },
+    "vue method":{
+        "prefix": "vmethod",
+        "body": [
+            "${1:func}(${2}) {",
+            "\t${3}",
+            "}"
+        ],
+        "description": "Vue method snippet"
+    },
 }
