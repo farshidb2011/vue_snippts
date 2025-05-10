@@ -1,0 +1,54 @@
+{
+    "Vue Init": {
+        "prefix": "vue",
+        "body": [
+            "<script setup>",
+            "import { ref } from 'vue';",
+            "",
+            "</script>",
+            "",
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<style scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Initial vue content"
+    },
+    "watch": {
+        "prefix": "vwatch",
+        "body": [
+            "watch(${1:var}, (${2}, ${3}) => {",
+            "\t${4}",
+            "});"
+        ],
+        "description": "Vue watch snippet"
+    },
+    "computed": {
+        "prefix": "vcomputed",
+        "body": [
+            "const ${1:var} = computed(() => {",
+            "\t${2}",
+            "});"
+        ],
+        "description": "Vue computed snippet"
+    },
+    "ref": {
+        "prefix": "vref",
+        "body": [
+            "const ${1:var} = ref(${2});"
+        ],
+        "description": "Vue ref snippet"
+    },
+    "reactive": {
+        "prefix": "vreactive",
+        "body": [
+            "const ${1:var} = reactive({",
+            "\t${2}",
+            "});"
+        ],
+        "description": "Vue reactive snippet"
+    },
+}
