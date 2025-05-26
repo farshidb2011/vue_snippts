@@ -69,7 +69,7 @@
             "${1:prop}: {",
             "\ttype: ${2:String},",
             "\tdefault: ${3:defaultValue}",
-            "},",
+            "},"
         ],
         "description": "Vue props snippet"
     },
@@ -85,7 +85,7 @@
         ],
         "description": "Vue emits snippet"
     },
-    "vue async func":{
+    "vue async func": {
         "prefix": "vasync",
         "body": [
             "const ${1:func} = async (${2}) => {",
@@ -94,7 +94,7 @@
         ],
         "description": "Vue async function snippet"
     },
-    "vue function":{
+    "vue function": {
         "prefix": "vfunc",
         "body": [
             "const ${1:func} = (${2}) => {",
@@ -103,7 +103,7 @@
         ],
         "description": "Vue function snippet"
     },
-    "vue method":{
+    "vue method": {
         "prefix": "vmethod",
         "body": [
             "${1:func}(${2}) {",
@@ -112,4 +112,42 @@
         ],
         "description": "Vue method snippet"
     },
+    "vue tryc": {
+        "prefix": "vtryc",
+        "body": [
+            "try {",
+            "\t${1}",
+            "} catch (error) {",
+            "\t${2}",
+            "} finally {",
+            "\t${3}",
+            "}"
+        ],
+        "description": "Vue try catch snippet"
+    },
+    "vue axios": {
+        "prefix": "vaxios",
+        "body": [
+            "const ${1:res} = await ${2};"
+        ],
+        "description": "Vue axios snippet"
+    },
+    "primevue tab": {
+        "prefix": "ptab",
+        "body": [
+            "<Tabs value=\"${1:0}\">",
+            "\t<TabList>",
+            "\t\t<Tab value=\"${2:0}\">",
+            "\t\t\t${3}",
+            "\t\t</Tab>",
+            "\t</TabList>",
+            "\t<TabPanels>",
+            "\t\t<TabPanel value=\"${4:0}\">",
+            "\t\t\t${5}",
+            "\t\t</TabPanel>",
+            "\t</TabPanels>",
+            "</Tabs>"
+        ],
+        "description": "PrimeVue tab snippet"
+    }
 }
