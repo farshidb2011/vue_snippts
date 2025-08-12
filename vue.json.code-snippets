@@ -17,6 +17,24 @@
         ],
         "description": "Initial vue content"
     },
+    "Vue Init typescript": {
+        "prefix": "vut",
+        "body": [
+            "<script setup lang=\"ts\">",
+            "import { ref } from 'vue';",
+            "",
+            "</script>",
+            "",
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<style scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Initial vue content"
+    },
     "watch": {
         "prefix": "vwatch",
         "body": [
@@ -124,6 +142,13 @@
             "}"
         ],
         "description": "Vue try catch snippet"
+    },
+    "vue use":{
+        "prefix": "vuse",
+        "body": [
+            "const ${2} = use${1};"
+        ],
+        "description": "vue use composiable snippet"
     },
     "vue axios": {
         "prefix": "vaxios",
